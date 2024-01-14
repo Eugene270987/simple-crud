@@ -1,0 +1,86 @@
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+#users{
+    padding: 10px;
+    position: relative;
+}
+.user__container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.actions > input{
+    margin-right: 5px;
+}
+
+#form{
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 20px;
+
+    & input{
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+.modal__open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    background: gold;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.modal__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.button__container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.error__message{
+    &::placeholder {
+        color: red;
+    }
+}
+
+.table__container{
+    text-align: center;
+    width: 300px;
+    min-height: 300px;
+    border: 1px solid black;
+    background: gold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.btn__close{
+    width: 100%;
+}
